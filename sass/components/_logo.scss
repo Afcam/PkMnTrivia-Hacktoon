@@ -1,0 +1,12 @@
+// Style for thes logo
+.logo {
+  background-color: $color-black;
+  padding: rem(16px) rem(24px);
+  width: fit-content;
+  height: fit-content;
+
+  &__icon {
+    width: rem($logo-width);
+    height: rem($logo-height);
+  }
+}

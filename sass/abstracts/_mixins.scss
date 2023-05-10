@@ -1,0 +1,33 @@
+// Mixins
+@mixin mobile {
+  @media screen and (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+@mixin max-flex {
+  flex: 0 1 rem($breakpoint-desktop);
+}
+
+@mixin default-padding {
+  padding: rem(16px) rem(24px);
+}
+
+$html-font-size: 16px;
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
+}
+@function rem($pxValue) {
+  @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}

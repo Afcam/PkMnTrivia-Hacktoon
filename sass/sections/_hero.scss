@@ -1,0 +1,28 @@
+.hero {
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    color: $color-white;
+    @include max-flex;
+    @include default-padding;
+  }
+  &__image {
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+  }
+  &__overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+
+    &--all {
+      inset: 0;
+    }
+  }
+}

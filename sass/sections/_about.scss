@@ -1,0 +1,42 @@
+.about {
+  background-color: $color-white;
+  color: $color-black;
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    @include max-flex;
+    @include default-padding;
+  }
+  &__header {
+  }
+  &__content {
+    padding: rem(24px);
+  }
+  &__image {
+    aspect-ratio: 16/9;
+    width: 100%;
+  }
+  &__citation {
+    // & > h3 {
+    //   margin: 0;
+    // }
+  }
+  &__text {
+  }
+  &__collum {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    & > p {
+      margin: 0;
+    }
+  }
+}
