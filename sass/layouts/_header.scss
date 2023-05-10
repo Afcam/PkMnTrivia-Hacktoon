@@ -1,0 +1,15 @@
+.logo{
+    width: rem(100px);
+    height: rem(200px);
+}
+
+.header{
+      background-color: $color-black;
+  display: flex;
+  justify-content: center;
+
+    &__wrapper{}
+    &__center{}
+    &__left{}
+    &__right{}
+}
