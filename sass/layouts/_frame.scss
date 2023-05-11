@@ -1,10 +1,12 @@
 .frame {
-  //   background-color: purple;
-  padding: 5%;
+  background-color: purple;
   display: flex;
+  flex: 1;
+
+  // padding: 5%;
   //   justify-content: center;
   flex-direction: column;
-  flex: 3;
+  // flex: 3;
 
   &__image {
     // background-color: aquamarine;
@@ -16,7 +18,7 @@
       height: 100%;
     }
     // border-radius: 4%;
-    border: 24px solid $color-border;
+    // border: 24px solid $color-border;
   }
   &__description {
     background-color: gold;

@@ -29,7 +29,7 @@ body {
 
 /* Typography */
 body {
-  font-family: "Helvetica Neue, Helvetica, Arial";
+  font-family: Helvetica, sans-serif "Helvetica Neue, Helvetica, Arial";
 }
 
 a {
@@ -58,13 +58,6 @@ a {
   font-weight: normal;
 }
 
-.color {
-  color: #323232;
-}
-.color--black {
-  color: black;
-}
-
 /*
 This file is used to contain all component imports.
 Files inside this folder should contain all styles relating
@@ -81,19 +74,6 @@ to a reusable component.s
   background-color: blue;
 }
 
-.logo {
-  background-color: #323232;
-  padding: 1rem 1.5rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.logo__icon {
-  width: 7.5rem;
-  height: 1.25rem;
-}
-
 /*
 This file is used to contain all layout imports.
 Files inside this folder should contain all styles relating
@@ -101,25 +81,30 @@ to layouts.
 */
 .footer {
   display: flex;
-  flex: 1;
+  background-color: green;
   justify-content: space-around;
   align-items: center;
 }
 
 .card {
-  border-radius: 4%;
-  border: 24px solid #c7b63b;
+  background-color: rgb(219, 203, 203);
   display: flex;
   flex-direction: column;
-  aspect-ratio: 9/16;
-  flex: 0 1 56.25rem;
-  background-color: rgb(145, 17, 17);
+  border-radius: 4%;
+  border: 2vmin solid #c7b63b;
+  aspect-ratio: 1/1.41;
+}
+.card__wrapper {
+  width: 100%;
+  height: 100%;
 }
 
 .header {
+  background-color: blue;
   display: flex;
   justify-content: space-between;
   margin: 0 50px;
+  flex: 1;
 }
 .header__left {
   display: flex;
@@ -145,14 +130,13 @@ to layouts.
 }
 
 .frame {
-  padding: 5%;
+  background-color: purple;
   display: flex;
+  flex: 1;
   flex-direction: column;
-  flex: 3;
 }
 .frame__image {
   flex: 1;
-  border: 24px solid #c7b63b;
 }
 .frame__image--image {
   width: 100%;
@@ -164,8 +148,8 @@ to layouts.
 }
 
 .main {
-  background-color: azure;
-  flex: 5;
+  display: flex;
+  background-color: orange;
 }
 
 /*
@@ -195,64 +179,4 @@ to pages.
 This file is used to contain all layout imports.
 Files inside this folder should contain all styles relating
 to sections.
-*/
-.about {
-  background-color: #ffffff;
-  color: #323232;
-  display: flex;
-  justify-content: center;
-}
-.about__wrapper {
-  display: flex;
-  flex-direction: column;
-  flex: 0 1 64rem;
-  padding: 1rem 1.5rem;
-}
-.about__content {
-  padding: 1.5rem;
-}
-.about__image {
-  aspect-ratio: 16/9;
-  width: 100%;
-}
-.about__collum {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-@media screen and (min-width: 768px) {
-  .about__collum {
-    flex-direction: row;
-  }
-}
-.about__collum > p {
-  margin: 0;
-}
-
-.hero {
-  position: relative;
-}
-.hero__wrapper {
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  flex: 0 1 64rem;
-  padding: 1rem 1.5rem;
-}
-.hero__image {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  aspect-ratio: 16/9;
-  width: 100%;
-  height: auto;
-}
-.hero__overlay {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-}
-.hero__overlay--all {
-  inset: 0;
-}/*# sourceMappingURL=styles.css.map */
+*//*# sourceMappingURL=styles.css.map */

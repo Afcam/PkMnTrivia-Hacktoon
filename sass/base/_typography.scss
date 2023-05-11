@@ -6,7 +6,7 @@ body {
 
 /* Typography */
 body {
-  font-family: "Helvetica Neue, Helvetica, Arial";
+  font-family: $font-primary "Helvetica Neue, Helvetica, Arial";
 }
 
 a {
@@ -40,13 +40,5 @@ a {
   }
   &--normal {
     font-weight: normal;
-  }
-}
-
-.color {
-  color: $color-black;
-
-  &--black {
-    color: black;
   }
 }

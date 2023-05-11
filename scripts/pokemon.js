@@ -61,7 +61,7 @@ function fetchPokemon() {
       console.log(error);
     });
 }
-fetchPokemon();
+// fetchPokemon();
 
 function displayPokemon(pokemon) {
   const { name, img } = pokemon;
