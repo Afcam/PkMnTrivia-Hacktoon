@@ -4,7 +4,7 @@
 // }
 
 .header {
-  background-color: blue;
+  //   background-color: blue;
   display: flex;
   justify-content: space-between;
   margin: 0 50px;
@@ -29,11 +29,11 @@
   }
   &__image {
     aspect-ratio: 1/1;
-    width: 100px;
+    width: 200px;
     height: auto;
     // width: 200px;
     // height: 200px;
-    background-color: green;
+    // background-color: green;
     // color: red;
 
     display: flex;

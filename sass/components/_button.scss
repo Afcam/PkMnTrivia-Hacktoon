@@ -1,0 +1,12 @@
+.button {
+  &__type {
+    padding: 1rem;
+    font-size: 1rem;
+    &--fire {
+      background-color: red;
+    }
+    &--water {
+      background-color: blue;
+    }
+  }
+}

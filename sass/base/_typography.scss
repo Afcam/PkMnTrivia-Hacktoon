@@ -6,7 +6,7 @@ body {
 
 /* Typography */
 body {
-  font-family: $font-primary, "Helvetica Neue, Helvetica, Arial";
+  font-family: "Helvetica Neue, Helvetica, Arial";
 }
 
 a {
@@ -21,13 +21,13 @@ a {
 
 .text {
   &--description {
-    font-size: rem(32px);
+    font-size: rem(2re);
   }
   &--name {
-    font-size: rem(60px);
+    font-size: rem(50px);
   }
   &--basic {
-    font-size: rem(24px);
+    font-size: rem(40px);
   }
   &--hp {
     font-size: rem(60px);
