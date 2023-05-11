@@ -94,13 +94,6 @@ function createButtonEventListener(btn, type) {
   });
 }
 
-getPokemon(10).then((response) => {
-  console.log(response);
-});
-getPokemon(20).then((response) => {
-  console.log(response);
-});
-
 function triviaGame() {
   // Root element for GAME
   const game = document.getElementById("game");
@@ -109,7 +102,9 @@ function triviaGame() {
   const randomPokemon = getRandomId();
   getPokemon(randomPokemon)
     .then((response) => {
-      const info = getPokemonInfo(response);
+      return getPokemonInfo(response);
+    })
+    .then((info) => {
       displayPokemonImage(info.img);
       displayPokemonName(info.name);
       const buttons = createButtonsHtml(pokemonTypeList);
@@ -123,6 +118,7 @@ function triviaGame() {
       });
     });
 }
+
 triviaGame();
 
 // function fetchPokemon() {
