@@ -89,6 +89,7 @@ to layouts.
 .card {
   background-color: #e7e2df;
   display: flex;
+  flex: 1;
   flex-direction: column;
   border-radius: 4%;
   border: 2vmin solid #ffe165;
@@ -154,19 +155,6 @@ to pages.
 .app {
   display: flex;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
-}
-
-.image__type {
-  aspect-ratio: 1/1;
-  width: 6.25rem;
-  padding: 15px;
-}
-
-.logo {
-  width: 18.75rem;
-  height: auto;
 }
 
 /*
