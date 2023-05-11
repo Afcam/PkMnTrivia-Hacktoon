@@ -105,10 +105,10 @@ function triviaGame() {
       return getPokemonInfo(response);
     })
     .then((info) => {
-      displayPokemonImage(info.img);
-      displayPokemonName(info.name);
       const buttons = createButtonsHtml(pokemonTypeList);
       game.appendChild(buttons);
+      displayPokemonImage(info.img);
+      displayPokemonName(info.name);
       return info.type;
     })
     .then((type) => {

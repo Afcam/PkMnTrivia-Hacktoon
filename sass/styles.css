@@ -99,7 +99,7 @@ to layouts.
 .card__wrapper {
   display: flex;
   flex-direction: column;
-  flex: 6;
+  flex: 1;
 }
 
 .header {
@@ -153,7 +153,7 @@ to layouts.
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 5;
+  flex: 1;
   margin: 2vw;
   background-color: orange;
   border-radius: 4%;
@@ -162,11 +162,10 @@ to layouts.
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 75%;
+  width: 90%;
   gap: 1vw;
 }
 .game__button {
-  color: transparent;
   background: none;
   color: inherit;
   border: none;
