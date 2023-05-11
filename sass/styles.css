@@ -137,8 +137,8 @@ to layouts.
   width: 100%;
 }
 .frame__image--image {
-  width: 35vmax;
-  height: 35vmax;
+  width: 35vw;
+  height: 35vh;
 }
 .frame__description {
   display: flex;
@@ -150,22 +150,37 @@ to layouts.
 
 .game {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 5;
   margin: 2vw;
   background-color: orange;
   border-radius: 4%;
 }
 .game__wrapper {
-  background-color: black;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60%;
+  gap: 1vw;
 }
 .game__button {
-  aspect-ratio: 1/1;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  height: 6vh;
+  width: 6vh;
+}
+.game__button:hover {
+  background-color: gray;
 }
 .game__img {
-  height: 10px;
   width: 100%;
-  flex: 1;
+  height: 100%;
 }
 
 /*
@@ -177,6 +192,7 @@ to pages.
   display: flex;
   justify-content: center;
   width: 100vw;
+  height: 100vh;
 }
 
 /*
