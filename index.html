@@ -4,27 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="./sass/styles.css" />
+    <script src="./scripts/pokemon.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>PkMn Trivia Hacktoon</title>
   </head>
 
   <body>
-    <div id="content">
-      <header class="header">
-        <div class="header__wrapper">
-          <div class="header__left"></div>
-          <div class="header__center">
-            <div class="header__logo">
-              <img
-                src="./assets/Images/International_Pokémon_logo.svg.png"
-                class="logo"
-                alt="pkmn"
-                onerror="this.style.display='none';" />
+    <div id="app" class="app">
+      <div class="card">
+        <!-- <div class="card__wrapper">
+          <header class="header">
+            <div class="header__left text--bold">
+              <span class="text--basic">Basic Pokémon</span>
+              <span class="text--name">Vulpix</span>
             </div>
+            <div class="header__right text--bold">
+              <p class="text--hp">HP</p>
+              <span class="text--hp">50</span>
+              <div class="header__image">
+                <img id="image" src="./assets/Fire_Type_Icon.svg.png" alt=type"
+                class="header__image--type" />
+              </div>
+            </div>
+          </header>
+          <section class="frame">
+            <div class="frame__image">
+              <img
+                src="./assets/vulpix.jpeg"
+                alt=""
+                class="frame__image--image" />
+            </div>
+            <div class="frame__description">
+              <span class="text--description">Fox Pokémno. leng asdfasdfs</span>
+            </div>
+          </section>
+        </div> -->
+        <!-- <main id="main" class="main"></main> -->
+        <!-- <footer class="footer">
+          <div class="footer__item">
+            <span class="text--author">AIA</span>
           </div>
-          <div class="header__right"></div>
-        </div>
-      </header>
+          <div class="footer__item">
+            <span class="text--author">ARTHUR</span>
+          </div>
+          <div class="footer__item">
+            <span class="text--author">TIMOTHY</span>
+          </div>
+        </footer> -->
+      </div>
     </div>
   </body>
 </html>
