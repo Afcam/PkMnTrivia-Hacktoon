@@ -10,10 +10,16 @@
 
   &__type {
     aspect-ratio: 1/1;
+    background-color: $color-type-background;
+
+    // padding: 1vh;
     height: 5vh;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
 
     &--image {
-      width: 100%;
+      width: max-content;
       height: 100%;
     }
   }

@@ -1,8 +1,11 @@
 // Random function
 const maxNumberOfPokemons = 1008;
 const getRandomId = () => Math.floor(Math.random() * maxNumberOfPokemons);
+const assetsFolder = "./assets/";
+const imgFileExtension = ".ico";
+const getImage = (img) => assetsFolder + img + imgFileExtension;
 
-let arrTypes = [
+let pokemonTypeList = [
   "normal",
   "fire",
   "water",
@@ -36,6 +39,9 @@ console.log(getPokemon(getRandomId()));
 
 // =================================================================
 // DOM Functions
+function capitalize(s) {
+  return s && s[0].toUpperCase() + s.slice(1);
+}
 
 // Change in DOM the Pokemon Name
 function displayPokemonName(name) {
@@ -49,30 +55,42 @@ function displayPokemonImage(imageUrl) {
 }
 
 function createButtonHtml(type) {
+  let imgUrl = getImage(type);
   return `
-  <button class="button__type">
-  ${type}
+  <button class="game__button">
+  <img class="game__img" src="${imgUrl}"/>
   </button>
   `;
 }
-function createMainWrapperHtml(types) {
-  let mainWrapper = document.createElement("div");
-  mainWrapper.classList.add("main__wrapper");
-  types.forEach((type) => {
-    let btn = createButtonHtml(type);
-    mainWrapper.appendChild(btn);
-  });
-  return mainWrapper;
+function createButtonsHtml(types) {
+  let buttons = document.createElement("div");
+  buttons.classList.add("game__wrapper");
+  for (const type of types) {
+    buttons.innerHTML += createButtonHtml(type);
+  }
+  return buttons;
 }
 
 // Exrtract info drom dataset
 function getPokemonInfo(pokemonDataSet) {
   const data = pokemonDataSet.data;
-  const name = data.name;
+  const name = capitalize(data.name);
   const type = data.types[0].type.name;
   const img = data.sprites.other["official-artwork"].front_default;
 
   return { name: name, type: type, img: img };
+}
+
+function createButtonEventListener(btn, value) {
+  btn.addEventListener("click", (event) => {
+    if (event.target.innerText === value) {
+      alert("WIN"); //winning outcome
+    } else {
+      alert("LOSE"); //losing outcome
+    }
+    // Restart the Game
+    triviaGame();
+  });
 }
 
 getPokemon(10).then((response) => {
@@ -83,13 +101,17 @@ getPokemon(20).then((response) => {
 });
 
 function triviaGame() {
-  // Root elemnt for GAME
-  const game = document.getElementById("main");
+  // Root element for GAME
+  const game = document.getElementById("game");
+  // Clear the game
+  // game.innerHTML = "";
   const randomPokemon = getRandomId();
   getPokemon(randomPokemon).then((response) => {
     const info = getPokemonInfo(response);
     displayPokemonImage(info.img);
     displayPokemonName(info.name);
+    const buttons = createButtonsHtml(pokemonTypeList);
+    game.appendChild(buttons);
   });
 }
 triviaGame();
@@ -115,20 +137,11 @@ triviaGame();
 //       displayButtons(arrTypes);
 //       const ansButtons = document.querySelectorAll(".button__type");
 //       ansButtons.forEach((ansButton) => {
-//         ansButton.addEventListener("click", (event) => {
-//           if (event.target.innerText === testPokemon.type.toString()) {
-//             //////////////test
-//             alert("wwwwwwwwwwwww"); //winning outcome
-//           } else {
-//             alert("lllllllllllll"); //losing outcome
-//           }
-//           root.innerHTML = "";
-//           fetchPokemon();
-//         });
-//       });
-//     })
-//     .catch((error) => {
-//       console.log(error);
+
+//   });
+// })
+// .catch((error) => {
+//   console.log(error);
 //     });
 // }
 // // fetchPokemon();
@@ -157,18 +170,4 @@ triviaGame();
 //     button.innerText = arrTypes[i];
 //     root.appendChild(button);
 //   }
-// }
-
-// const { name, img } = pokemon;
-// const image = document.querySelector(".frame__image--image");
-// const description = document.querySelector(".text--description");
-// image.src = img;
-// description.innerText = name;
-
-//   return `
-//     <div class="cards">
-//       <img class="cards__img" src="${img}"/>
-//       <h2 class="cards__name">${name}</h2>
-//     </div>
-//   `;
 // }
