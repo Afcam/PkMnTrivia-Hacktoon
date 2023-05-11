@@ -89,12 +89,11 @@ to layouts.
 .card {
   background-color: #e7e2df;
   display: flex;
-  flex: 1;
   flex-direction: column;
-  border-radius: 4%;
   border: 2vmin solid #ffe165;
-  aspect-ratio: 1/1.41;
+  border-radius: 4%;
   padding: 1.5vmin;
+  aspect-ratio: 1/1.41;
 }
 .card__wrapper {
   display: flex;
@@ -155,6 +154,8 @@ to pages.
 .app {
   display: flex;
   justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 /*
