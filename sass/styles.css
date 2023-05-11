@@ -37,7 +37,7 @@ a {
 }
 
 .text--description {
-  font-size: 2vmin;
+  font-size: 4vmin;
 }
 .text--name {
   font-size: 5vmin;
@@ -90,7 +90,7 @@ to layouts.
   background-color: #e7e2df;
   display: flex;
   flex-direction: column;
-  border: 2vmin solid #ffe165;
+  border: 2vmax solid #ffe165;
   border-radius: 4%;
   padding: 1.5vmin;
   aspect-ratio: 1/1.41;
@@ -99,7 +99,6 @@ to layouts.
   display: flex;
   flex-direction: column;
   flex: 6;
-  background-color: black;
 }
 
 .header {
@@ -130,11 +129,16 @@ to layouts.
   flex-direction: column;
 }
 .frame__image {
-  display: flex;
   border: 1vmin solid #d3962c;
   justify-content: center;
+  align-items: center;
+  display: flex;
   flex: 1;
   width: 100%;
+}
+.frame__image--image {
+  width: 35vmax;
+  height: 35vmax;
 }
 .frame__description {
   display: flex;
@@ -173,7 +177,6 @@ to pages.
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
 }
 
 /*

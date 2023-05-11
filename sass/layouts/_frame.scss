@@ -4,15 +4,16 @@
   flex-direction: column;
 
   &__image {
-    display: flex;
     border: 1vmin solid $color-image-border;
     justify-content: center;
+    align-items: center;
+    display: flex;
     flex: 1;
     width: 100%;
 
     &--image {
-      // width: inherit;
-      // height: inherit;
+      width: 35vmax;
+      height: 35vmax;
     }
   }
   &__description {

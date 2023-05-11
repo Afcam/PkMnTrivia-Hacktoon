@@ -2,7 +2,7 @@
   background-color: $color-card-background;
   display: flex;
   flex-direction: column;
-  border: 2vmin solid $color-card-border;
+  border: 2vmax solid $color-card-border;
   border-radius: 4%;
   padding: 1.5vmin;
   aspect-ratio: 1/1.41;
@@ -11,8 +11,5 @@
     display: flex;
     flex-direction: column;
     flex: 6;
-    background-color: black;
-    // width: 100%;
-    // height: 100%;
   }
 }
