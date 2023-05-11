@@ -48,6 +48,9 @@ a {
 .text--hp {
   font-size: 3.75rem;
 }
+.text--author {
+  font-size: 1vw;
+}
 .text--bold {
   font-weight: bold;
 }
@@ -97,7 +100,10 @@ Files inside this folder should contain all styles relating
 to layouts.
 */
 .footer {
+  display: flex;
   flex: 1;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .card {
