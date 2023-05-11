@@ -1,0 +1,10 @@
+.card {
+  // background-color: $color-yellow;
+  border-radius: 4%;
+  border: 24px solid $color-border;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 9/16;
+  flex: 0 1 rem(900px);
+  background-color: $color-type-fire;
+}

@@ -1,15 +1,47 @@
-.logo{
-    width: rem(100px);
-    height: rem(200px);
-}
+// .logo {
+//   width: rem(100px);
+//   height: rem(200px);
+// }
 
-.header{
-      background-color: $color-black;
+.header {
+  background-color: blue;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 50px;
+  //   flex: 1;
 
-    &__wrapper{}
-    &__center{}
-    &__left{}
-    &__right{}
+  &__wrapper {
+  }
+  &__center {
+  }
+  &__left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    // align-items: center;
+  }
+  &__right {
+    // color: red;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  &__image {
+    aspect-ratio: 1/1;
+    width: 100px;
+    height: auto;
+    // width: 200px;
+    // height: 200px;
+    background-color: green;
+    // color: red;
+
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    &--type {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

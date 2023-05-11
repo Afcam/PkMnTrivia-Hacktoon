@@ -13,36 +13,24 @@ a {
   text-decoration: none;
 }
 
-@mixin bs-typo($size, $height, $weight) {
+@mixin typo($size, $height, $weight) {
   font-size: rem($size);
   font-weight: $weight;
   line-height: rem($height);
 }
 
 .text {
-  &--h1,
-  &--ph {
-    @include bs-typo(60px, 68px, 700);
+  &--description {
+    font-size: rem(32px);
   }
-  &--h2,
-  &--sh {
-    @include bs-typo(36px, 44px, 700);
+  &--name {
+    font-size: rem(60px);
   }
-  &--h3,
-  &--sub {
-    @include bs-typo(24px, 32px, 600);
+  &--basic {
+    font-size: rem(24px);
   }
-  &--h4,
-  &--bc {
-    @include bs-typo(14px, 22px, 400);
-  }
-  &--h5,
-  &--fc {
-    @include bs-typo(14px, 20px, 400);
-  }
-  &--h6,
-  &--lb {
-    @include bs-typo(12px, 20px, 700);
+  &--hp {
+    font-size: rem(60px);
   }
   &--bold {
     font-weight: bold;

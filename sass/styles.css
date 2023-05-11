@@ -1,0 +1,265 @@
+/*
+This file is used to contain all abstracts imports.
+Files inside this folder can contain abstract settings, helpers or functions. They have no direct output.
+*/
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../../assets/Font/AvenirNextLTPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../../assets/Font/AvenirNextLTProBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../../assets/Font/AvenirNextLTProDemi.ttf") format("truetype");
+  font-weight: demi;
+  font-style: normal;
+}
+/*
+This file is used to contain all base imports.
+Files inside this folder can contain global styles used in
+the project.
+*/
+/*
+This file can be used to overwrite any normailze settings.
+*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html *,
+body * {
+  box-sizing: inherit;
+}
+
+/* Reboot */
+html,
+body {
+  margin: 0 !important;
+}
+
+/* Typography */
+body {
+  font-family: "Avenir Next", Helvetica, sans-serif, "Helvetica Neue, Helvetica, Arial";
+}
+
+a {
+  text-decoration: none;
+}
+
+.text--description {
+  font-size: 2rem;
+}
+.text--name {
+  font-size: 3.75rem;
+}
+.text--basic {
+  font-size: 1.5rem;
+}
+.text--hp {
+  font-size: 3.75rem;
+}
+.text--bold {
+  font-weight: bold;
+}
+.text--normal {
+  font-weight: normal;
+}
+
+.color {
+  color: #323232;
+}
+.color--black {
+  color: black;
+}
+
+/*
+This file is used to contain all component imports.
+Files inside this folder should contain all styles relating
+to a reusable component.s
+*/
+.logo {
+  background-color: #323232;
+  padding: 1rem 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.logo__icon {
+  width: 7.5rem;
+  height: 1.25rem;
+}
+
+/*
+This file is used to contain all layout imports.
+Files inside this folder should contain all styles relating
+to layouts.
+*/
+.footer {
+  background-color: green;
+  flex: 1;
+}
+
+.card {
+  border-radius: 4%;
+  border: 24px solid #c7b63b;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 9/16;
+  flex: 0 1 56.25rem;
+  background-color: red;
+}
+
+.header {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+.header__left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header__image {
+  aspect-ratio: 1/1;
+  width: 100px;
+  height: auto;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+.header__image--type {
+  width: 100%;
+  height: 100%;
+}
+
+.frame {
+  background-color: purple;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+.frame__image {
+  background-color: aquamarine;
+  padding: 50px;
+  flex: 1;
+  border: 24px solid #c7b63b;
+}
+.frame__image--image {
+  width: 100%;
+  height: 100%;
+}
+.frame__description {
+  background-color: gold;
+  margin: 16px 5%;
+}
+
+.main {
+  background-color: azure;
+  flex: 5;
+}
+
+/*
+This file is used to contain all layout imports.
+Files inside this folder should contain all styles relating
+to pages.
+*/
+.app {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.image__type {
+  aspect-ratio: 1/1;
+  width: 6.25rem;
+  padding: 15px;
+}
+
+.logo {
+  width: 18.75rem;
+  height: auto;
+}
+
+/*
+This file is used to contain all layout imports.
+Files inside this folder should contain all styles relating
+to sections.
+*/
+.about {
+  background-color: #ffffff;
+  color: #323232;
+  display: flex;
+  justify-content: center;
+}
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 64rem;
+  padding: 1rem 1.5rem;
+}
+.about__content {
+  padding: 1.5rem;
+}
+.about__image {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+.about__collum {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+@media screen and (min-width: 768px) {
+  .about__collum {
+    flex-direction: row;
+  }
+}
+.about__collum > p {
+  margin: 0;
+}
+
+.hero {
+  position: relative;
+}
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  flex: 0 1 64rem;
+  padding: 1rem 1.5rem;
+}
+.hero__image {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+}
+.hero__overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+}
+.hero__overlay--all {
+  inset: 0;
+}/*# sourceMappingURL=styles.css.map */
