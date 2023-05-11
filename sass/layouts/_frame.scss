@@ -1,27 +1,27 @@
 .frame {
-  background-color: purple;
   display: flex;
-  flex: 5;
-
-  // padding: 5%;
-  //   justify-content: center;
+  flex: 1;
   flex-direction: column;
-  // flex: 3;
 
   &__image {
-    // background-color: aquamarine;
-    // padding: 50px;
+    display: flex;
+    border: 1vmin solid $color-image-border;
+    justify-content: center;
     flex: 1;
+    width: 100%;
 
     &--image {
-      width: 100%;
-      height: 100%;
+      // width: inherit;
+      // height: inherit;
     }
-    // border-radius: 4%;
-    // border: 24px solid $color-border;
   }
   &__description {
-    background-color: gold;
-    margin: 16px 5%;
+    display: flex;
+    justify-content: center;
+    border: 0.3vmin solid $color-image-border;
+    background-color: #e0a23b;
+    // background-color: #efeeee;
+    margin: 0.5vw 2vw;
+    // margin: 0 2vw;
   }
 }

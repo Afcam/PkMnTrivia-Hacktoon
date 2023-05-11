@@ -21,10 +21,10 @@ a {
 
 .text {
   &--description {
-    font-size: rem(2re);
+    font-size: 2vmin;
   }
   &--name {
-    font-size: 5em;
+    font-size: 5vmin;
   }
   &--basic {
     font-size: rem(40px);
@@ -33,7 +33,7 @@ a {
     font-size: rem(60px);
   }
   &--author {
-    font-size: 1vw;
+    font-size: 2vmin;
   }
   &--bold {
     font-weight: bold;

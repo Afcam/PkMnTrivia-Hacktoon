@@ -37,10 +37,10 @@ a {
 }
 
 .text--description {
-  font-size: 0.125rem;
+  font-size: 2vmin;
 }
 .text--name {
-  font-size: 5em;
+  font-size: 5vmin;
 }
 .text--basic {
   font-size: 2.5rem;
@@ -49,7 +49,7 @@ a {
   font-size: 3.75rem;
 }
 .text--author {
-  font-size: 1vw;
+  font-size: 2vmin;
 }
 .text--bold {
   font-weight: bold;
@@ -81,18 +81,17 @@ to layouts.
 */
 .footer {
   display: flex;
-  flex: 1;
-  background-color: green;
+  padding: 1vmin 2vmin;
   justify-content: space-around;
-  align-items: center;
+  align-items: end;
 }
 
 .card {
-  background-color: rgb(219, 203, 203);
+  background-color: #e7e2df;
   display: flex;
   flex-direction: column;
   border-radius: 4%;
-  border: 2vmin solid #c7b63b;
+  border: 2vmin solid #ffe165;
   aspect-ratio: 1/1.41;
   padding: 1.5vmin;
 }
@@ -106,8 +105,6 @@ to layouts.
 
 .header {
   display: flex;
-  height: 15%;
-  flex-shrink: 0;
   justify-content: space-between;
 }
 .header__left {
@@ -116,7 +113,7 @@ to layouts.
 }
 .header__type {
   aspect-ratio: 1/1;
-  height: 100%;
+  height: 5vh;
 }
 .header__type--image {
   width: 100%;
@@ -124,21 +121,23 @@ to layouts.
 }
 
 .frame {
-  background-color: purple;
   display: flex;
-  flex: 5;
+  flex: 1;
   flex-direction: column;
 }
 .frame__image {
+  display: flex;
+  border: 1vmin solid #d3962c;
+  justify-content: center;
   flex: 1;
-}
-.frame__image--image {
   width: 100%;
-  height: 100%;
 }
 .frame__description {
-  background-color: gold;
-  margin: 16px 5%;
+  display: flex;
+  justify-content: center;
+  border: 0.3vmin solid #d3962c;
+  background-color: #e0a23b;
+  margin: 0.5vw 2vw;
 }
 
 .main {
