@@ -40,7 +40,7 @@ a {
   font-size: 0.125rem;
 }
 .text--name {
-  font-size: 3.125rem;
+  font-size: 5em;
 }
 .text--basic {
   font-size: 2.5rem;
@@ -81,6 +81,7 @@ to layouts.
 */
 .footer {
   display: flex;
+  flex: 1;
   background-color: green;
   justify-content: space-around;
   align-items: center;
@@ -93,38 +94,31 @@ to layouts.
   border-radius: 4%;
   border: 2vmin solid #c7b63b;
   aspect-ratio: 1/1.41;
+  padding: 1.5vmin;
 }
 .card__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 6;
   width: 100%;
   height: 100%;
 }
 
 .header {
-  background-color: blue;
   display: flex;
+  height: 15%;
+  flex-shrink: 0;
   justify-content: space-between;
-  margin: 0 50px;
-  flex: 1;
 }
 .header__left {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  align-items: end;
 }
-.header__right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.header__image {
+.header__type {
   aspect-ratio: 1/1;
-  width: 200px;
-  height: auto;
-  display: flex;
-  align-items: center;
-  padding: 25px;
+  height: 100%;
 }
-.header__image--type {
+.header__type--image {
   width: 100%;
   height: 100%;
 }
@@ -132,7 +126,7 @@ to layouts.
 .frame {
   background-color: purple;
   display: flex;
-  flex: 1;
+  flex: 5;
   flex-direction: column;
 }
 .frame__image {
@@ -149,6 +143,7 @@ to layouts.
 
 .main {
   display: flex;
+  flex: 5;
   background-color: orange;
 }
 

@@ -1,45 +1,19 @@
-// .logo {
-//   width: rem(100px);
-//   height: rem(200px);
-// }
-
 .header {
-  background-color: blue;
   display: flex;
+  height: 15%;
+  flex-shrink: 0;
   justify-content: space-between;
-  margin: 0 50px;
-  flex: 1;
 
-  &__wrapper {
-  }
-  &__center {
-  }
   &__left {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    // align-items: center;
+    align-items: end;
   }
-  &__right {
-    // color: red;
 
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  &__image {
+  &__type {
     aspect-ratio: 1/1;
-    width: 200px;
-    height: auto;
-    // width: 200px;
-    // height: 200px;
-    // background-color: green;
-    // color: red;
+    height: 100%;
 
-    display: flex;
-    align-items: center;
-    padding: 25px;
-    &--type {
+    &--image {
       width: 100%;
       height: 100%;
     }
