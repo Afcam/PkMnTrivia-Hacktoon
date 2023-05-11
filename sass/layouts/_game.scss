@@ -25,6 +25,9 @@
     // gap: 1vw;
   }
   &__button {
+    // To hide text
+    color: transparent;
+
     background: none;
     color: inherit;
     border: none;

@@ -81,9 +81,10 @@ function getPokemonInfo(pokemonDataSet) {
   return { name: name, type: type, img: img };
 }
 
-function createButtonEventListener(btn, value) {
+function createButtonEventListener(btn, type) {
   btn.addEventListener("click", (event) => {
-    if (event.target.innerText === value) {
+    console.log(event.target.src);
+    if (event.target.src.includes(type)) {
       alert("WIN"); //winning outcome
     } else {
       alert("LOSE"); //losing outcome
@@ -104,15 +105,23 @@ function triviaGame() {
   // Root element for GAME
   const game = document.getElementById("game");
   // Clear the game
-  // game.innerHTML = "";
+  game.innerHTML = "";
   const randomPokemon = getRandomId();
-  getPokemon(randomPokemon).then((response) => {
-    const info = getPokemonInfo(response);
-    displayPokemonImage(info.img);
-    displayPokemonName(info.name);
-    const buttons = createButtonsHtml(pokemonTypeList);
-    game.appendChild(buttons);
-  });
+  getPokemon(randomPokemon)
+    .then((response) => {
+      const info = getPokemonInfo(response);
+      displayPokemonImage(info.img);
+      displayPokemonName(info.name);
+      const buttons = createButtonsHtml(pokemonTypeList);
+      game.appendChild(buttons);
+      return info.type;
+    })
+    .then((type) => {
+      const allBtn = document.querySelectorAll(".game__button");
+      allBtn.forEach((button) => {
+        createButtonEventListener(button, type);
+      });
+    });
 }
 triviaGame();
 

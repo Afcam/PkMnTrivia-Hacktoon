@@ -165,6 +165,7 @@ to layouts.
   gap: 1vw;
 }
 .game__button {
+  color: transparent;
   background: none;
   color: inherit;
   border: none;
