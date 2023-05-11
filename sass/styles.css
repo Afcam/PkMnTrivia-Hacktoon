@@ -92,7 +92,7 @@ to layouts.
   flex-direction: column;
   border: 2vmax solid #ffe165;
   border-radius: 4%;
-  padding: 1.5vmin;
+  padding: 4vmin;
   aspect-ratio: 1/1.41;
   flex: 1;
 }
@@ -130,6 +130,7 @@ to layouts.
   flex-direction: column;
 }
 .frame__image {
+  background-color: rgb(240, 232, 186);
   border: 1vmin solid #d3962c;
   justify-content: center;
   align-items: center;
@@ -138,8 +139,8 @@ to layouts.
   width: 100%;
 }
 .frame__image--image {
-  width: 35vw;
-  height: 35vh;
+  width: 70%;
+  height: auto;
 }
 .frame__description {
   display: flex;

@@ -106,6 +106,7 @@ function triviaGame() {
     })
     .then((info) => {
       const buttons = createButtonsHtml(pokemonTypeList);
+      // Render buttons to HTML
       game.appendChild(buttons);
       displayPokemonImage(info.img);
       displayPokemonName(info.name);

@@ -4,6 +4,7 @@
   flex-direction: column;
 
   &__image {
+    background-color: rgb(240, 232, 186);
     border: 1vmin solid $color-image-border;
     justify-content: center;
     align-items: center;
@@ -12,8 +13,9 @@
     width: 100%;
 
     &--image {
-      width: 35vw;
-      height: 35vh;
+      width: 70%;
+      height: auto;
+      // height: 35vh;
     }
   }
   &__description {
